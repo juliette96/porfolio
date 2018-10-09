@@ -1,39 +1,85 @@
-@charset "UTF-8";
+@import 'normalize';
+$primary-color:#c7acf8;
+$secondary-color:#130029;
+$third-color:#ffc813;
+$fourth-color:#720fe2;
+
+h1{
+	text-align:center;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 1,5em;
+	margin:2em;
+}
+
+h2{
+	text-align:center;
+}
+
+h2.nuit{
+	color:red;
+}
+
+h2.jour{
+	color:$fourth-color;
+}
+
 body.jour{
-	background-color:chartreuse;
+	background-color:$primary-color;
+	color:$secondary-color;
+}
+img{
+	display: block;
+    margin-left: auto;
+	margin-right: auto;
+	margin-bottom:2em;
+	border-radius:50%;
+}
+
+nav{
+	display : flex;
+	justify-content:flex-end
+}
+
+button{
+	margin:1em;
+	margin-bottom:0;
+	border:none;
 }
 
 button.jour{
 	padding:5px;	
 	border-radius:0;
+	color:$primary-color;
+	background-color:$fourth-color;
 }
 
 button.jour:hover{
-	color:yellow;
-	background-color:pink;
+	color:$primary-color;
+	background-color: $secondary-color;
 }
 
 img.jour{
-	border:5px solid purple;
-	border-radius:50%;
+	border:5px solid $fourth-color;
+	
 }
 
 body.nuit{
-	background-color:purple;
-	color:yellow;
+	background-color:$secondary-color;
+	color:$third-color;
 }
 
 button.nuit{
 	padding:5px;	
 	border-radius:0;
+	background-color: red;
+	color:$secondary-color;
 }
 
 button.nuit:hover{
-	color:blue;
-	background-color:orange;
+	color:$secondary-color;
+	background-color:$primary-color;
 }
 
 img.nuit{
 	border:5px solid red;
-	border-radius:50%;
 }

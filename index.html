@@ -6,13 +6,17 @@
 <link rel="stylesheet" type="text/css" href=css/style.css />
 
 </head>
+
+<nav><button  class="jour" type="button" 
+	onclick="changeClass()" id="bonsoir">
+	Passer en mode nuit</button>
+</nav>
+
 <body class="jour" id="all">
 <h1>Portfolio de Juliette Demas</h1>
 <img class="jour" src="img/hippo.jpg">
 
-<button  class="jour" type="button" 
-onclick="changeClass()" id="bonsoir">
-Mode nuit</button>
+
 
 <h2 class="jour">Mes études</h2>
 <ul class="jour" >
@@ -31,17 +35,19 @@ function changeClass(){
 	if(all.className=='jour'){
 		one='jour';
 		two='nuit';
+		document.getElementById("bonsoir").innerHTML = "Passer en mode jour";
 	}
 	else {
 		one='nuit';
 		two='jour';
+		document.getElementById("bonsoir").innerHTML = "Passer en mode nuit";
 	}
 	
 	var x = document.getElementsByClassName(one);
 	console.log(x);
 	console.log(x.length);
 	
-	var i = x.length-1;
+	var i = x.length;
 	
 	while(i>0){
 		console.log("coucou"+i);
