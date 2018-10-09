@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Mon portfolio</title>
-<link rel="stylesheet" type="text/css" href=style.css />
+<link rel="stylesheet" type="text/css" href=css/style.css />
 
 </head>
 <body class="jour" id="all">
@@ -11,7 +11,7 @@
 <img class="jour" src="img/hippo.jpg">
 
 <button  class="jour" type="button" 
-onclick="changeClass()">
+onclick="changeClass()" id="bonsoir">
 Mode nuit</button>
 
 <h2 class="jour">Mes études</h2>
@@ -48,6 +48,9 @@ function changeClass(){
 	    x[0].className=two;
 	    i=i-1
 	}
+	
+	/*getElementById
+	innerHTML*/
 
 	
 	/*x=x.map(x.className'nuit');*/
