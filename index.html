@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Mon portfolio</title>
+<link rel="stylesheet" type="text/css" href=style.css />
+
+</head>
+<body class="jour" id="all">
+<h1>Portfolio de Juliette Demas</h1>
+<img class="jour" src="img/hippo.jpg">
+
+<button  class="jour" type="button" 
+onclick="changeClass()">
+Mode nuit</button>
+
+<h2 class="jour">Mes études</h2>
+<ul class="jour" >
+	<li>LPro SMIN en alternance en cours</li>
+	<li>DUT Métiers du Multimédia et de l'Internet obtenu en 2018</li>
+	<li>Bac S obtenu en 2014</li>
+</ul>
+<h2 class="jour">Mes expériences professionnelles</h2>
+<ul class="jour">
+	<li>Apprentissage chez Groupe Curious à Grenoble</li>
+	<li>Stage de DUT chez On Communication</li>
+</ul>
+
+<script>
+function changeClass(){
+	if(all.className=='jour'){
+		one='jour';
+		two='nuit';
+	}
+	else {
+		one='nuit';
+		two='jour';
+	}
+	
+	var x = document.getElementsByClassName(one);
+	console.log(x);
+	console.log(x.length);
+	
+	var i = x.length-1;
+	
+	while(i>0){
+		console.log("coucou"+i);
+	    x[0].className=two;
+	    i=i-1
+	}
+
+	
+	/*x=x.map(x.className'nuit');*/
+	
+	
+}
+</script>
+</body>
+</html>
