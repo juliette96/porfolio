@@ -8,12 +8,13 @@
 </head>
 
 <nav><button  class="jour" type="button" 
-	onclick="changeClass()" id="bonsoir">
+	id="bonsoir">
 	Passer en mode nuit</button>
 </nav>
 
 <body class="jour" id="all">
-<h1>Portfolio de Juliette Demas</h1>
+<h1 id="welcome">Bonjour,</h1>
+<h1>Bienvenue sur le portfolio de Juliette Demas</h1>
 <img class="jour" src="img/hippo.jpg">
 
 
@@ -31,6 +32,11 @@
 </ul>
 
 <script>
+/*
+onclick="changeClass()" 
+
+
+
 function changeClass(){
 	if(all.className=='jour'){
 		one='jour';
@@ -54,15 +60,17 @@ function changeClass(){
 	    x[0].className=two;
 	    i=i-1
 	}
-	
+	*/
 	/*getElementById
 	innerHTML*/
 
 	
 	/*x=x.map(x.className'nuit');*/
 	
-	
-}
+/*	
+}*/
 </script>
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
