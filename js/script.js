@@ -4,6 +4,7 @@ $( document ).ready(function() {
     var Over=false;
     //timer(10);
     //transition();
+    //degrade(backgroundToDay);
     
 
 });
@@ -15,9 +16,7 @@ function changeClass(){
 		two='nuit';
         document.getElementById("bonsoir").innerHTML = "Passer en mode jour";
         document.getElementById("welcome").innerHTML = "Bonsoir,";
-        //degrade(backgroundToDay) ;
         $("body").css("background-color", "#130029") 
-        $("body").css("color", "#c7acf8") 
         //document.body.style.backgroundColor = degrade(backgroundToDay);
 	}
 	else {
@@ -25,9 +24,7 @@ function changeClass(){
 		two='jour';
         document.getElementById("bonsoir").innerHTML = "Passer en mode nuit";
         document.getElementById("welcome").innerHTML = "Bonjour,";
-        $("body").css("background-color", "#c7acf8")
-        $("body").css("color", "#130029")
-        //degrade(backgroundToDay.reverse());
+        $("body").css("background-color", "#c7acf8");
     }
     classRename(one, two)
 	
@@ -63,13 +60,11 @@ function start(){
             document.getElementById("welcome").innerHTML = "Bonjour,";
             classRename('nuit', 'jour');
             $("body").css("background-color", "#c7acf8")
-            $("body").css("color", "#130029")
         }else{
             console.log('dodo'); 
             document.getElementById("welcome").innerHTML = "Bonsoir,";
             classRename('jour', 'nuit');
-            $("body").css("background-color", "#130029") 
-            $("body").css("color", "#c7acf8")  
+            $("body").css("background-color", "#130029")  
         }
     //}
 }
@@ -91,23 +86,20 @@ function timer(i){// i le nombre de secondes voulues dans le timer
     }
 
 }
-function wait(ms){
-    var start = new Date().getTime();
-    var end = start;
-    while(end < start + ms) {
-      end = new Date().getTime();
-   }
- }
+
+
+
 
     // changer les couleurs en fonction de l'heure
 function degrade(tab) {
     length=tab.length;
     //console.log(tab.length);
     while (length>=0) {
-        $("body").css("background-color", tab[length]);
-        //setTimeOut(length-=1, 1000)
-        wait(1000);
-        length-=1
+        if (timer(1)){
+            console.log('coucou');
+            length-=1
+        }
+        
     }
     
     

@@ -25,12 +25,12 @@ h2.jour{
 	color:$fourth-color;
 }
 
-//body.jour{
+body.jour{
 	//transition:background-color 2s;
 	//transition:color 2s;
 	//background-color:$primary-color;
-	//color:$secondary-color;
-//}
+	color:$secondary-color;
+}
 img{
 	display: block;
     margin-left: auto;
@@ -67,10 +67,10 @@ img.jour{
 	
 }
 
-/*body.nuit{
+body.nuit{
 	//background-color:$secondary-color;
 	color:$third-color;
-}*/
+}
 
 button.nuit{
 	padding:5px;	
