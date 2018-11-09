@@ -264,11 +264,6 @@ h2.jour {
   color: #720fe2;
 }
 
-/* line 28, C:/Users/Juliette/Desktop/basesAppliMobile/proj/scss/style.scss */
-body.jour {
-  color: #130029;
-}
-
 /* line 34, C:/Users/Juliette/Desktop/basesAppliMobile/proj/scss/style.scss */
 img {
   display: block;
@@ -309,11 +304,10 @@ img.jour {
   border: 5px solid #720fe2;
 }
 
-/* line 70, C:/Users/Juliette/Desktop/basesAppliMobile/proj/scss/style.scss */
-body.nuit {
-  color: #ffc813;
-}
-
+/*body.nuit{
+	//background-color:$secondary-color;
+	color:$third-color;
+}*/
 /* line 75, C:/Users/Juliette/Desktop/basesAppliMobile/proj/scss/style.scss */
 button.nuit {
   padding: 5px;
