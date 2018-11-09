@@ -8,7 +8,7 @@
 </head>
 
 <nav><button  class="jour" type="button" 
-	id="bonsoir">
+	id="bonsoir" onclick="changeClass()" >
 	Passer en mode nuit</button>
 </nav>
 
@@ -17,26 +17,39 @@
 <h1>Bienvenue sur le portfolio de Juliette Demas</h1>
 <img class="jour" src="img/hippo.jpg">
 
+<div class="article">
+	<h2 class="jour">Mes compétences</h2>
+	<ul class="jour">
+		<li>Php : 3/5</li>
+		<li>Html : 4/5</li>
+		<li>Css : 4/5</li>
+		<li>JS : 2/5</li>
+		<li>Java : 2/5</li>
+		<li>Wordpress : 3/5</li>
+	</ul>
+</div>
 
-
+<div class="article"></span>
 <h2 class="jour">Mes études</h2>
-<ul class="jour" >
-	<li>LPro SMIN en alternance en cours</li>
-	<li>DUT Métiers du Multimédia et de l'Internet obtenu en 2018</li>
-	<li>Bac S obtenu en 2014</li>
-</ul>
+	<ul class="jour" >
+		<li>LPro SMIN en alternance en cours</li>
+		<li>DUT Métiers du Multimédia et de l'Internet obtenu en 2018</li>
+		<li>Bac S obtenu en 2014</li>
+	</ul>
+</div>
+<div class="article"></span>
 <h2 class="jour">Mes expériences professionnelles</h2>
-<ul class="jour">
-	<li>Apprentissage chez Groupe Curious à Grenoble</li>
-	<li>Stage de DUT chez On Communication</li>
-</ul>
-
+	<ul class="jour">
+		<li>Apprentissage chez Groupe Curious à Grenoble</li>
+		<li>Stage de DUT chez On Communication</li>
+	</ul>
+</div>
 <script>
+
+
 /*
+
 onclick="changeClass()" 
-
-
-
 function changeClass(){
 	if(all.className=='jour'){
 		one='jour';
