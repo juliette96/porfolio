@@ -104,6 +104,58 @@ function degrade(tab) {
     
     
 }
+
+
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+function buttonClickGET() {
+    var url = "https://api.openweathermap.org/data/2.5/weather?q=Grenoble,fr&appid=59b30ffd6943cd67a8cacf9da8d2a99b&units=metric"
+ 
+    $.get(url, callBackGetSuccess).done(function() {
+        //alert( "second success" );
+      })
+      .fail(function() {
+        alert( "error" );
+      })
+      .always(function() {
+        //alert( "finished" );
+      });
+}
+
+
+1
+2
+3
+4
+var callBackGetSuccess = function(data) {
+    var element = document.getElementById("zone_meteo");
+    if (data.main.temp<=0) {
+        element.innerHTML = "Brrr. Il gêle. Il fait " + data.main.temp + " °C.";
+    }
+    else if (data.main.temp<10) {
+        element.innerHTML = "Il fait froid. La température est de " + data.main.temp + " °C.";
+    }
+    else if (data.main.temp<30) {
+        element.innerHTML = "Il fait trop chaud. Température : " + data.main.temp + " °C.";
+    } else {
+        data.main.temp + " °C. Il fait bon à Grenoble.";
+    }
+}
+
+
+
     
    // timer(10)
     
