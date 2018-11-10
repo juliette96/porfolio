@@ -147,10 +147,10 @@ var callBackGetSuccess = function(data) {
     else if (data.main.temp<10) {
         element.innerHTML = "Il fait froid. La température est de " + data.main.temp + " °C.";
     }
-    else if (data.main.temp<30) {
-        element.innerHTML = "Il fait trop chaud. Température : " + data.main.temp + " °C.";
+    else if (data.main.temp<20) {
+        element.innerHTML = data.main.temp + " °C. Il fait bon à Grenoble.";
     } else {
-        data.main.temp + " °C. Il fait bon à Grenoble.";
+        element.innerHTML = "Il fait trop chaud. Température : " + data.main.temp + " °C.";
     }
 }
 
