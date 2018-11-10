@@ -245,7 +245,7 @@ table {
 h1 {
   text-align: center;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 1,5em;
+  font-size: 1, 5em;
   margin: 2em;
 }
 
@@ -269,7 +269,7 @@ body.jour {
   color: #130029;
 }
 
-/* line 34, C:/Users/Juliette/Desktop/basesAppliMobile/proj/scss/style.scss */
+/* line 35, C:/Users/Juliette/Desktop/basesAppliMobile/proj/scss/style.scss */
 img {
   display: block;
   margin-left: auto;
@@ -278,43 +278,43 @@ img {
   border-radius: 50%;
 }
 
-/* line 42, C:/Users/Juliette/Desktop/basesAppliMobile/proj/scss/style.scss */
+/* line 43, C:/Users/Juliette/Desktop/basesAppliMobile/proj/scss/style.scss */
 nav {
   display: flex;
   justify-content: flex-end;
 }
 
-/* line 47, C:/Users/Juliette/Desktop/basesAppliMobile/proj/scss/style.scss */
+/* line 48, C:/Users/Juliette/Desktop/basesAppliMobile/proj/scss/style.scss */
 button {
   margin: 1em;
   margin-bottom: 0;
   border: none;
 }
 
-/* line 53, C:/Users/Juliette/Desktop/basesAppliMobile/proj/scss/style.scss */
+/* line 54, C:/Users/Juliette/Desktop/basesAppliMobile/proj/scss/style.scss */
 button.jour {
   padding: 5px;
   border-radius: 0;
   color: #c7acf8;
 }
 
-/* line 60, C:/Users/Juliette/Desktop/basesAppliMobile/proj/scss/style.scss */
+/* line 61, C:/Users/Juliette/Desktop/basesAppliMobile/proj/scss/style.scss */
 button.jour:hover {
   color: #c7acf8;
   background-color: #130029;
 }
 
-/* line 65, C:/Users/Juliette/Desktop/basesAppliMobile/proj/scss/style.scss */
+/* line 66, C:/Users/Juliette/Desktop/basesAppliMobile/proj/scss/style.scss */
 img.jour {
   border: 5px solid #720fe2;
 }
 
-/* line 70, C:/Users/Juliette/Desktop/basesAppliMobile/proj/scss/style.scss */
+/* line 71, C:/Users/Juliette/Desktop/basesAppliMobile/proj/scss/style.scss */
 body.nuit {
   color: #ffc813;
 }
 
-/* line 75, C:/Users/Juliette/Desktop/basesAppliMobile/proj/scss/style.scss */
+/* line 76, C:/Users/Juliette/Desktop/basesAppliMobile/proj/scss/style.scss */
 button.nuit {
   padding: 5px;
   border-radius: 0;
@@ -322,18 +322,18 @@ button.nuit {
   color: #130029;
 }
 
-/* line 82, C:/Users/Juliette/Desktop/basesAppliMobile/proj/scss/style.scss */
+/* line 83, C:/Users/Juliette/Desktop/basesAppliMobile/proj/scss/style.scss */
 button.nuit:hover {
   color: #130029;
   background-color: #c7acf8;
 }
 
-/* line 87, C:/Users/Juliette/Desktop/basesAppliMobile/proj/scss/style.scss */
+/* line 88, C:/Users/Juliette/Desktop/basesAppliMobile/proj/scss/style.scss */
 img.nuit {
   border: 5px solid red;
 }
 
-/* line 91, C:/Users/Juliette/Desktop/basesAppliMobile/proj/scss/style.scss */
+/* line 92, C:/Users/Juliette/Desktop/basesAppliMobile/proj/scss/style.scss */
 .article {
   width: 33%;
   display: inline-block;
@@ -341,14 +341,14 @@ img.nuit {
 }
 
 @media screen and (max-width: 992px) {
-  /* line 99, C:/Users/Juliette/Desktop/basesAppliMobile/proj/scss/style.scss */
+  /* line 100, C:/Users/Juliette/Desktop/basesAppliMobile/proj/scss/style.scss */
   .article {
     width: 49%;
   }
 }
 
 @media screen and (max-width: 600px) {
-  /* line 106, C:/Users/Juliette/Desktop/basesAppliMobile/proj/scss/style.scss */
+  /* line 107, C:/Users/Juliette/Desktop/basesAppliMobile/proj/scss/style.scss */
   .article {
     width: 100%;
   }

@@ -1,96 +1,57 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="UTF-8">
-<title>Mon portfolio</title>
-<link rel="stylesheet" type="text/css" href=css/style.css />
+	<meta charset="UTF-8">
+	<title>Mon portfolio</title>
+	<link rel="stylesheet" type="text/css" href=css/style.css />
 
 </head>
 
-<nav><button  class="jour" type="button" 
-	id="bonsoir" onclick="changeClass()" >
-	Passer en mode nuit</button>
+<nav><button class="jour" type="button" id="bonsoir" onclick="changeClass()">
+		Passer en mode nuit</button>
 </nav>
 
 <body class="jour" id="all">
-<h1 id="welcome">Bonjour,</h1>
-<h1>Bienvenue sur le portfolio de Juliette Demas</h1>
-<img class="jour" src="img/hippo.jpg">
+	<h1 id="welcome">Bonjour,</h1>
+	<h1>Bienvenue sur le portfolio de Juliette Demas</h1>
+	<img class="jour" src="img/hippo.jpg">
 
-<div class="article">
-	<h2 class="jour">Mes compétences</h2>
-	<ul class="jour">
-		<li>Php : 3/5</li>
-		<li>Html : 4/5</li>
-		<li>Css : 4/5</li>
-		<li>JS : 2/5</li>
-		<li>Java : 2/5</li>
-		<li>Wordpress : 3/5</li>
-	</ul>
-</div>
+	<div class="article">
+		<h2 class="jour">Mes compétences</h2>
+		<ul class="jour">
+			<li>Php : 3/5</li>
+			<li>Html : 4/5</li>
+			<li>Css : 4/5</li>
+			<li>JS : 2/5</li>
+			<li>Java : 2/5</li>
+			<li>Wordpress : 3/5</li>
+		</ul>
+	</div>
 
-<div class="article"></span>
-<h2 class="jour">Mes études</h2>
-	<ul class="jour" >
-		<li>LPro SMIN en alternance en cours</li>
-		<li>DUT Métiers du Multimédia et de l'Internet obtenu en 2018</li>
-		<li>Bac S obtenu en 2014</li>
-	</ul>
-</div>
-<div class="article"></span>
-<h2 class="jour">Mes expériences professionnelles</h2>
-	<ul class="jour">
-		<li>Apprentissage chez Groupe Curious à Grenoble</li>
-		<li>Stage de DUT chez On Communication</li>
-	</ul>
-</div>
+	<div class="article"></span>
+		<h2 class="jour">Mes études</h2>
+		<ul class="jour">
+			<li>LPro SMIN en alternance en cours</li>
+			<li>DUT Métiers du Multimédia et de l'Internet obtenu en 2018</li>
+			<li>Bac S obtenu en 2014</li>
+		</ul>
+	</div>
+	<div class="article"></span>
+		<h2 class="jour">Mes expériences professionnelles</h2>
+		<ul class="jour">
+			<li>Apprentissage chez Groupe Curious à Grenoble</li>
+			<li>Stage de DUT chez On Communication</li>
+		</ul>
+	</div>
 
-<div>
-	<input type="button" value="Fait-il froid à Grenoble aujourd'hui ?"  onclick="buttonClickGET()"  />
-	<p id="zone_meteo">???</p>
-</div>
+	<div>
+		<input type="button" value="Fait-il froid à Grenoble aujourd'hui ?" onclick="buttonClickGET()" />
+		<p id="zone_meteo">???</p>
+	</div>
 
-	
-<script>
-
-
-/*
-
-onclick="changeClass()" 
-function changeClass(){
-	if(all.className=='jour'){
-		one='jour';
-		two='nuit';
-		document.getElementById("bonsoir").innerHTML = "Passer en mode jour";
-	}
-	else {
-		one='nuit';
-		two='jour';
-		document.getElementById("bonsoir").innerHTML = "Passer en mode nuit";
-	}
-	
-	var x = document.getElementsByClassName(one);
-	console.log(x);
-	console.log(x.length);
-	
-	var i = x.length;
-	
-	while(i>0){
-		console.log("coucou"+i);
-	    x[0].className=two;
-	    i=i-1
-	}
-	*/
-	/*getElementById
-	innerHTML*/
-
-	
-	/*x=x.map(x.className'nuit');*/
-	
-/*	
-}*/
-</script>
-<script src="node_modules/jquery/dist/jquery.js"></script>
-<script src="js/script.js"></script>
+	<script src="node_modules/jquery/dist/jquery.js"></script>
+	<script src="js/script.js"></script>
 </body>
+
 </html>

@@ -6,104 +6,105 @@ $fourth-color:#720fe2;
 $fifth-color:#a662f3;
 
 
-h1{
-	text-align:center;
+h1 {
+	text-align: center;
 	font-family: Georgia, 'Times New Roman', Times, serif;
-	font-size: 1,5em;
-	margin:2em;
+	font-size: 1, 5em;
+	margin: 2em;
 }
 
-h2{
-	text-align:center;
+h2 {
+	text-align: center;
 }
 
-h2.nuit{
-	color:red;
+h2.nuit {
+	color: red;
 }
 
-h2.jour{
-	color:$fourth-color;
+h2.jour {
+	color: $fourth-color;
 }
 
-body.jour{
+body.jour {
 	//transition:background-color 2s;
 	//transition:color 2s;
 	//background-color:$primary-color;
-	color:$secondary-color;
+	color: $secondary-color;
 }
-img{
+
+img {
 	display: block;
-    margin-left: auto;
+	margin-left: auto;
 	margin-right: auto;
-	margin-bottom:2em;
-	border-radius:50%;
+	margin-bottom: 2em;
+	border-radius: 50%;
 }
 
-nav{
-	display : flex;
-	justify-content:flex-end
+nav {
+	display: flex;
+	justify-content: flex-end
 }
 
-button{
-	margin:1em;
-	margin-bottom:0;
-	border:none;
+button {
+	margin: 1em;
+	margin-bottom: 0;
+	border: none;
 }
 
-button.jour{
-	padding:5px;	
-	border-radius:0;
-	color:$primary-color;
+button.jour {
+	padding: 5px;
+	border-radius: 0;
+	color: $primary-color;
 	//background-color:$fourth-color;
 }
 
-button.jour:hover{
-	color:$primary-color;
+button.jour:hover {
+	color: $primary-color;
 	background-color: $secondary-color;
 }
 
-img.jour{
-	border:5px solid $fourth-color;
-	
+img.jour {
+	border: 5px solid $fourth-color;
+
 }
 
-body.nuit{
+body.nuit {
 	//background-color:$secondary-color;
-	color:$third-color;
+	color: $third-color;
 }
 
-button.nuit{
-	padding:5px;	
-	border-radius:0;
+button.nuit {
+	padding: 5px;
+	border-radius: 0;
 	background-color: red;
-	color:$secondary-color;
+	color: $secondary-color;
 }
 
-button.nuit:hover{
-	color:$secondary-color;
-	background-color:$primary-color;
+button.nuit:hover {
+	color: $secondary-color;
+	background-color: $primary-color;
 }
 
-img.nuit{
-	border:5px solid red;
+img.nuit {
+	border: 5px solid red;
 }
 
 .article {
-	width : 33%;
-	display:inline-block;
+	width: 33%;
+	display: inline-block;
 	vertical-align: top;
 }
 
 
 @media screen and (max-width: 992px) {
-    .article {
-		width : 49%;
+	.article {
+		width: 49%;
 	}
 }
 
 
 @media screen and (max-width: 600px) {
-    .article {
-		width : 100%;
+	.article {
+		width: 100%;
 	}
 }
