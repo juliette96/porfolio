@@ -1,11 +1,10 @@
 $( document ).ready(function() {
-    console.log("ready now")
+    console.log("ready now");
     start();
     var Over=false;
     //timer(10);
     //transition();
     //degrade(backgroundToDay);
-    
 
 });
 
@@ -16,15 +15,29 @@ function changeClass(){
 		two='nuit';
         document.getElementById("bonsoir").innerHTML = "Passer en mode jour";
         document.getElementById("welcome").innerHTML = "Bonsoir,";
-        $("body").css("background-color", "#130029") 
+        //$("body").css("background-color", "#130029") 
         //document.body.style.backgroundColor = degrade(backgroundToDay);
+        var i = backgroundToDay.length;
+        function change() {
+            $("body").css("background-color", backgroundToDay[i]);
+            i--;
+  
+        }
+    setInterval(change, 1000);
 	}
 	else {
 		one='nuit';
 		two='jour';
         document.getElementById("bonsoir").innerHTML = "Passer en mode nuit";
         document.getElementById("welcome").innerHTML = "Bonjour,";
-        $("body").css("background-color", "#c7acf8");
+        //$("body").css("background-color", "#c7acf8");
+        var i = 0;
+        function change() {
+            $("body").css("background-color", backgroundToDay[i]);
+            i++;
+  
+        }
+    setInterval(change, 1000);
     }
     classRename(one, two)
 	
@@ -50,11 +63,18 @@ var backgroundToDay=["#130029","#402B5C","#6D5690","#9A81C4","#c7acf8"];
 
 //console.log(colortoday[1])
 
-
+var hDebut=99;
+var h =777;
+var itWas=888;
 function start(){
-    var h=new Date().getMinutes();//gethours utilisation des minutes pour etre plus rapide
+    console.log("heure="+h);
+    itWas = h;
+    h=new Date().getMinutes();//gethours utilisation des minutes pour etre plus rapide
     console.log("h="+h);
-    //if(Over==false){
+    console.log('debut'+hDebut);
+    console.log('ancienne heure'+itWas);
+    if (hDebut==99) {
+        hDebut=0;
         if(h>=30 && h<=60){//7 et 20
             console.log('debout');
             document.getElementById("welcome").innerHTML = "Bonjour,";
@@ -66,9 +86,36 @@ function start(){
             classRename('jour', 'nuit');
             $("body").css("background-color", "#130029")  
         }
-    //}
+        
+    } else {
+        if(h==30 && itWas==29){//30 et 29
+            console.log('debout');
+            document.getElementById("welcome").innerHTML = "Bonjour,";
+            classRename('nuit', 'jour');
+            var i = 0;
+            function change() {
+                $("body").css("background-color", backgroundToDay[i]);
+                i++;
+            }
+    setInterval(change, 1000);
+        }else if (h==0 && itWas==59){
+            console.log('dodo'); 
+            document.getElementById("welcome").innerHTML = "Bonsoir,";
+            classRename('jour', 'nuit');
+            var i = backgroundToDay.length;
+            function change() {
+                $("body").css("background-color", backgroundToDay[i]);
+                i--;
+  
+            }
+            setInterval(change, 1000);  
+        }
+    }
+    console.log('ro')
+    setTimeout(start,6000);
+    
+    
 }
-
 
 /*function transition(){
     //var colortoday=[].concat(backgroundToDay);
@@ -90,8 +137,19 @@ function timer(i){// i le nombre de secondes voulues dans le timer
 
 
 
-    // changer les couleurs en fonction de l'heure
+  /*  // changer les couleurs en fonction de l'heure
 function degrade(tab) {
+    var doc = document.getElementById("background");
+    var color = ["black", "blue", "brown", "green"];
+    var i = 0;
+    function change() {
+        $("body").css("background-color", color[i]);
+      i++;
+      
+    }
+    setInterval(change, 1000);
+
+
     length=tab.length;
     //console.log(tab.length);
     while (length>=0) {
@@ -103,23 +161,24 @@ function degrade(tab) {
     }
     
     
+}*/
+
+
+
+//var doc = document.getElementById("background");
+//var color = ["black", "blue", "brown", "green"];
+/*var i = 0;
+function change() {
+    $("body").css("background-color", backgroundToDay[i]);
+  i++;
+  
 }
+setInterval(change, 1000);*/
 
 
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
+
+
 function buttonClickGET() {
     var url = "https://api.openweathermap.org/data/2.5/weather?q=Grenoble,fr&appid=59b30ffd6943cd67a8cacf9da8d2a99b&units=metric"
  
