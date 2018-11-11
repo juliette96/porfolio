@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Website portfolio developer
 
 I have realised this portfolio developer for a university project in November 2018. 
