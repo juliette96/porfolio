@@ -1,6 +1,6 @@
 # Website portfolio developer
 
-I have realised this portfolio developer for a university project. 
+I have realised this portfolio developer for a university project in November 2018. 
 
 ## Getting Started
 
@@ -12,9 +12,8 @@ To go to my website follow the link : [https://juliette96.github.io/porfolio/](h
 * CSS
 * SASS
 * JS 
-* JQuery
-* 
+* JQuery library
 
 ## Author
 
-* **Juliette Demas**
+Juliette Demas
